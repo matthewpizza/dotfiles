@@ -1,5 +1,9 @@
 set autoindent
+set exandtab
 set hlsearch
 set incsearch
 set number
 set ruler
+set shiftwidth=2
+set smartindent
+set softtabstop=2
