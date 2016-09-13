@@ -1,0 +1,9 @@
+--type-add=css=.sass,.less,.scss
+--ignore-dir=vendor
+--ignore-dir=node_modules
+--ignore-dir=bower_components
+--smart-case
+--sort-files
+--color
+--follow
+--group
