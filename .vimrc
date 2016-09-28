@@ -1,5 +1,5 @@
 set autoindent
-set exandtab
+set expandtab
 set hlsearch
 set incsearch
 set number
