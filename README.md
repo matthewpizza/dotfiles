@@ -1,4 +1,6 @@
 `// Matthew’s dotfiles`
 
+A mellow amount of configuration.
+
 - [fish shell](http://fishshell.com/)
-- [edc/bass](https://github.com/edc/bass "Make Bash utilities usable in Fish shell")
+- [ack](http://beyondgrep.com/)
