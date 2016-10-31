@@ -3,11 +3,6 @@ if test -e ~/.aliases
     source ~/.aliases
 end
 
-# nvm
-function nvm
-    bass source ~/.nvm/nvm.sh ';' nvm $argv
-end
-
 # fuck
 function fuck
     eval ( thefuck $history[1] )
