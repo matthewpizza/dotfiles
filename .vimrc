@@ -3,6 +3,7 @@ set backspace=indent,eol,start
 set expandtab
 set hlsearch
 set incsearch
+set nocompatible
 set number
 set ruler
 set shiftwidth=2
