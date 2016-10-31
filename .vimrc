@@ -1,4 +1,5 @@
 set autoindent
+set backspace=indent,eol,start
 set expandtab
 set hlsearch
 set incsearch
