@@ -7,3 +7,5 @@ set ruler
 set shiftwidth=2
 set smartindent
 set softtabstop=2
+
+syntax on
