@@ -3,9 +3,9 @@ if test -e ~/.aliases
     source ~/.aliases
 end
 
-# fuck
+# fuck (https://github.com/nvbn/thefuck)
 function fuck
-    eval ( thefuck $history[1] )
+    eval thefuck $history[1]
 end
 
 # EDITOR
