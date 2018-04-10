@@ -19,8 +19,11 @@ call plug#end()
 
 " colors
 set t_Co=256        " sometimes tmux says weird stuff
-colorscheme dracula
 syntax on
+
+if filereadable(expand("$HOME/.vim/plugged/dracula/colors/dracula.vim"))
+    colorscheme dracula
+endif
 
 " editor
 set cursorline     " highlight current line
