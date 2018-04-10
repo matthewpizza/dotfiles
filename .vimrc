@@ -68,12 +68,11 @@ set incsearch  " move cursor to search matches
 set ignorecase " case-insensitive search
 set smartcase  " except when caps are present
 
-" TODO: WIP softwrap
-" set breakindent
-" set linebreak
-set textwidth=100
-" set wrap
-" set nolist
+" softwrap
+set linebreak    " soft break at word / whitespace
+set textwidth=0  " no hard warp
+set wrapmargin=0 " same as above
+set wrap         " 'visual' wrapping
 
 " TODO: disabled for now because it makes code unreadable
 " set spell
