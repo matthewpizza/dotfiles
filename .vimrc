@@ -12,6 +12,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'ctrlpvim/ctrlp.vim'
     Plug 'dracula/vim', { 'as': 'dracula' } " 🦇
     Plug 'junegunn/vim-easy-align'          " TODO: key mapping to make this easier
+    Plug 'mustache/vim-mustache-handlebars'
     Plug 'pangloss/vim-javascript'          " better js syntax
     Plug 'vim-airline/vim-airline'          " TODO: key mapping for bn bp bq
 call plug#end()
