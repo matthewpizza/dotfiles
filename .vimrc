@@ -93,4 +93,4 @@ let g:airline_powerline_fonts = 1            " TODO: iTerm vertical character sp
 let g:gitgutter_enabled = 1
 
 " custom keys
-nnoremap <esc> :noh<return><esc> " clear highlighting on escape key
+" nnoremap <esc> :noh<return><esc> " clear highlighting on escape key
