@@ -14,7 +14,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'junegunn/vim-easy-align'          " TODO: key mapping to make this easier
     Plug 'mustache/vim-mustache-handlebars'
     Plug 'pangloss/vim-javascript'          " better js syntax
-    Plug 'vim-airline/vim-airline'          " TODO: key mapping for bn bp bq
+    Plug 'vim-airline/vim-airline'          " tabline uses buffers
 call plug#end()
 
 " colors
@@ -97,3 +97,8 @@ let g:gitgutter_enabled = 1
 
 " custom keys
 " nnoremap <esc> :noh<return><esc> " clear highlighting on escape key
+
+" buffer nav
+nnoremap <c-h> :bprevious!<CR>
+nnoremap <c-l> :bnext!<CR>
+nnoremap <silent> <c-w> :bdelete!<CR>
