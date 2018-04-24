@@ -11,6 +11,8 @@ call plug#begin('~/.vim/plugged')
     Plug 'bronson/vim-trailing-whitespace'
     " Plug 'ctrlpvim/ctrlp.vim'
     Plug 'dracula/vim', { 'as': 'dracula' } " 🦇
+    Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+    Plug 'junegunn/fzf.vim'
     Plug 'junegunn/vim-easy-align'          " TODO: key mapping to make this easier
     Plug 'mustache/vim-mustache-handlebars'
     Plug 'pangloss/vim-javascript'          " better js syntax
@@ -91,6 +93,9 @@ set wrap         " 'visual' wrapping
 " airline
 let g:airline#extensions#tabline#enabled = 1 " 🆒 fake tabs for buffer
 let g:airline_powerline_fonts = 1            " TODO: iTerm vertical character spacing
+
+" fzf
+nnoremap <c-p> :FZF<CR>
 
 " gitgutter
 let g:gitgutter_enabled = 1
