@@ -4,6 +4,6 @@ A mellow amount of configuration.
 
 TK install:
 
-- [Fira Code](https://github.c:om/tonsky/FiraCode)
+- [Fira Code](https://github.com/tonsky/FiraCode)
 - `ag`
 - ctags (prolly)
