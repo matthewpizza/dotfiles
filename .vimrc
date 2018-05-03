@@ -38,6 +38,13 @@ set relativenumber
 set ruler
 set title
 
+" swap
+set noswapfile
+set nobackup
+set nowritebackup
+set backupdir=/var/tmp,/tmp
+set directory=/var/tmp,/tmp
+
 " overrides
 set exrc     " allow childern .vimrc to override
 set modeline " per file overrides
