@@ -60,6 +60,12 @@ set smartindent           " knows when to increase indentation
 set softtabstop=4         " when hitting tab
 filetype indent plugin on
 
+" move w/ wrap
+nnoremap j gj
+nnoremap k gk
+vnoremap j gj
+vnoremap k gk
+
 " code completion
 set wildmenu
 set wildmode=longest:list,full
