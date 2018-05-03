@@ -32,6 +32,7 @@ set cursorline     " highlight current line
 set encoding=utf-8
 set hidden         " don't require save when switching
 set history=1000   " undo more
+set lazyredraw
 set mouse=a        " mouse interactions
 set nocompatible   " don't do dumb vi things with arrow keys
 set number
