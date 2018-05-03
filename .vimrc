@@ -13,6 +13,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
     Plug 'junegunn/fzf.vim'
     Plug 'junegunn/vim-easy-align'          " TODO: key mapping to make this easier
+    Plug 'ludovicchabant/vim-gutentags'
     Plug 'mustache/vim-mustache-handlebars'
     Plug 'pangloss/vim-javascript'          " better js syntax
     Plug 'vim-airline/vim-airline'          " tabline uses buffers
