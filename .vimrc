@@ -67,7 +67,7 @@ set wildmode=longest:list,full
 set backspace=indent,eol,start " make backspace work sanely
 set list                       " show invisble characters
 set listchars=""               " reset inivisble character setting
-set listchars+=tab:▸\          " tab character
+set listchars+=tab:\ \         " tab character
 set listchars+=eol:¬           " newline character
 set listchars+=trail:.         " show trailing spaces
 
