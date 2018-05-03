@@ -95,11 +95,9 @@ set wrap         " 'visual' wrapping
 " set spelllang=en_us
 
 " https://robots.thoughtbot.com/faster-grepping-in-vim
-" if executable('ag')
-"     set grepprg=ag\ --nogroup\ --nocolor
-"     let g:ctrlp_user_command = 'ag %s -l --nocolor --nogroup --hidden -g ""'
-"     let g:ctrlp_use_caching = 0
-" endif
+if executable('ag')
+    set grepprg=ag\ --nogroup\ --nocolor
+endif
 
 " airline
 let g:airline#extensions#tabline#enabled = 1 " fake tabs for buffer
