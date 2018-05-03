@@ -104,9 +104,6 @@ let $FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
 " gitgutter
 let g:gitgutter_enabled = 1
 
-" custom keys
-" nnoremap <esc> :noh<return><esc> " clear highlighting on escape key
-
 " buffer nav
 nnoremap <c-h> :bprevious!<CR>
 nnoremap <c-l> :bnext!<CR>
