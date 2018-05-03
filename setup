@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
 
 # Move things into place
-cp .agignore $HOME/.agignore
 cp .vimrc $HOME/.vimrc
