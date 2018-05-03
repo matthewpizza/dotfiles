@@ -44,8 +44,8 @@ set title
 set noswapfile
 set nobackup
 set nowritebackup
-set backupdir=/var/tmp,/tmp
-set directory=/var/tmp,/tmp
+set backupdir=~/.vim/tmp,/var/tmp,/tmp
+set directory=~/.vim/tmp,/var/tmp,/tmp
 
 " overrides
 set exrc     " allow childern .vimrc to override
