@@ -19,7 +19,7 @@ call plug#begin('~/.vim/plugged')
 call plug#end()
 
 " colors
-set t_Co=256        " sometimes tmux says weird stuff
+set t_Co=256 " sometimes tmux says weird stuff
 syntax on
 
 if filereadable(expand("$HOME/.vim/plugged/dracula/colors/dracula.vim"))
