@@ -10,7 +10,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'airblade/vim-gitgutter'
     Plug 'bronson/vim-trailing-whitespace'
     " Plug 'ctrlpvim/ctrlp.vim'
-    Plug 'dracula/vim', { 'as': 'dracula' } " 🦇
+    Plug 'dracula/vim', { 'as': 'dracula' }
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
     Plug 'junegunn/fzf.vim'
     Plug 'junegunn/vim-easy-align'          " TODO: key mapping to make this easier
@@ -32,7 +32,7 @@ set cursorline     " highlight current line
 set encoding=utf-8
 set hidden         " don't require save when switching
 set history=1000   " undo more
-set mouse=a        " mouse interactions 💯
+set mouse=a        " mouse interactions
 set nocompatible   " don't do dumb vi things with arrow keys
 set number
 set relativenumber
@@ -91,7 +91,7 @@ set wrap         " 'visual' wrapping
 " endif
 
 " airline
-let g:airline#extensions#tabline#enabled = 1 " 🆒 fake tabs for buffer
+let g:airline#extensions#tabline#enabled = 1 " fake tabs for buffer
 let g:airline_powerline_fonts = 1            " TODO: iTerm vertical character spacing
 
 " fzf
