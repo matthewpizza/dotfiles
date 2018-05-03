@@ -22,3 +22,10 @@ Ripped from:
 - [torrez/dotvim](https://github.com/torrez/dotvim)
 - [v/dotfiles](https://github.com/v/dotfiles)
 - [noopkat/dotfiles](https://github.com/noopkat/dotfiles)
+
+TODO:
+
+- [`stow`](https://www.gnu.org/software/stow/)
+- PHPDoc
+- code folding
+- Brewfile
