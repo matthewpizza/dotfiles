@@ -94,18 +94,22 @@ set wrap         " 'visual' wrapping
 " set spell
 " set spelllang=en_us
 
+" fzf
+nnoremap <c-p> :FZF<CR>
+
 " https://robots.thoughtbot.com/faster-grepping-in-vim
 if executable('ag')
     set grepprg=ag\ --nogroup\ --nocolor
+    let $FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
+endif
+
+if executable('fd')
+    let $FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
 endif
 
 " airline
 let g:airline#extensions#tabline#enabled = 1 " fake tabs for buffer
 let g:airline_powerline_fonts = 1            " TODO: iTerm vertical character spacing
-
-" fzf
-nnoremap <c-p> :FZF<CR>
-let $FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
 
 " gitgutter
 let g:gitgutter_enabled = 1
