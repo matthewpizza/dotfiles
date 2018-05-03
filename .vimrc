@@ -92,6 +92,7 @@ let g:airline_powerline_fonts = 1            " TODO: iTerm vertical character sp
 
 " fzf
 nnoremap <c-p> :FZF<CR>
+let $FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
 
 " gitgutter
 let g:gitgutter_enabled = 1
