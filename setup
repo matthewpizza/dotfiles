@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 
 # Move things into place
+rm -rf $HOME/.vim
 cp .vimrc $HOME/.vimrc
