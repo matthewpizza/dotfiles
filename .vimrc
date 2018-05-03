@@ -9,7 +9,6 @@ endif
 call plug#begin('~/.vim/plugged')
     Plug 'airblade/vim-gitgutter'
     Plug 'bronson/vim-trailing-whitespace'
-    " Plug 'ctrlpvim/ctrlp.vim'
     Plug 'dracula/vim', { 'as': 'dracula' }
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
     Plug 'junegunn/fzf.vim'
@@ -79,9 +78,6 @@ set wrap         " 'visual' wrapping
 " TODO: disabled for now because it makes code unreadable
 " set spell
 " set spelllang=en_us
-
-" ctrlp
-" let g:ctrlp_show_hidden = 1
 
 " https://robots.thoughtbot.com/faster-grepping-in-vim
 " if executable('ag')
