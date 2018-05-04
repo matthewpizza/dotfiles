@@ -24,6 +24,8 @@ set t_Co=256 " sometimes tmux says weird stuff
 syntax on
 
 if filereadable(expand("$HOME/.vim/plugged/dracula/colors/dracula.vim"))
+    " Fix sad italics https://github.com/dracula/vim/issues/65#issuecomment-377496609
+    let g:dracula_italic = 0
     colorscheme dracula
     highlight Normal ctermbg=NONE
 endif
