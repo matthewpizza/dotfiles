@@ -25,6 +25,7 @@ syntax on
 
 if filereadable(expand("$HOME/.vim/plugged/dracula/colors/dracula.vim"))
     colorscheme dracula
+    highlight Normal ctermbg=NONE
 endif
 
 " editor
