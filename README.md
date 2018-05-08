@@ -6,7 +6,6 @@ A mellow amount of configuration.
 `fish`:
 
 - [fisherman](https://github.com/fisherman/fisherman)
-- [pure](https://github.com/rafaelrinaldi/pure)
 
 Ripped from:
 
