@@ -129,6 +129,9 @@ nnoremap <c-h> :bprevious!<CR>
 nnoremap <c-l> :bnext!<CR>
 nnoremap <silent> <c-w> :bdelete!<CR>
 
+" git commit message
+autocmd FileType gitcommit call setpos('.', [0, 1, 1, 0]) " start on first line always
+
 " netrw
 " http://ellengummesson.com/blog/2014/02/22/make-vim-really-behave-like-netrw/
 let g:netrw_liststyle = 3
