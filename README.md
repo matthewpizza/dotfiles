@@ -22,6 +22,7 @@ Ripped from:
 - [torrez/dotvim](https://github.com/torrez/dotvim)
 - [v/dotfiles](https://github.com/v/dotfiles)
 - [noopkat/dotfiles](https://github.com/noopkat/dotfiles)
+- [wincent/wincent](https://github.com/wincent/wincent)
 
 TODO:
 

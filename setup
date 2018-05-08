@@ -1,5 +1,12 @@
 #!/usr/bin/env bash
 
+# Better colors and italics
+rm -rf $HOME/.terminfo
+tic -o $HOME/.terminfo terminfo/xterm-256color.terminfo
+tic -o $HOME/.terminfo terminfo/tmux-256color.terminfo
+tic -o $HOME/.terminfo terminfo/tmux.terminfo
+
 # Move things into place
 rm -rf $HOME/.vim
 cp .vimrc $HOME/.vimrc
+cp .tmux.conf $HOME/.tmux.conf
