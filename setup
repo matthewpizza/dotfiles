@@ -9,13 +9,13 @@ tic -o $HOME/.terminfo terminfo/tmux.terminfo
 # Set vars for context
 if type nvim > /dev/null; then
     vimdir=$HOME/.local/share/nvim
-    vimfile=init.vim
+    vimfile=$HOME/.config/nvim/init.vim
 else
     vimdir=$HOME/.vim
-    vimfile=.vimrc
+    vimfile=$HOME/.vimrc
 fi
 
 # Move things into place
 rm -rf $vimdir
-cp .vimrc $HOME/$vimfile
+cp .vimrc $vimfile
 cp .tmux.conf $HOME/.tmux.conf
