@@ -1,12 +1,12 @@
 " install vim-plug
-if empty(glob('~/.vim/autoload/plug.vim'))
-    silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-        \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
+    silent !curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs
+	\ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
     autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
 " :PlugInstall
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.local/share/nvim/plugged')
     Plug 'airblade/vim-gitgutter'
     Plug 'bronson/vim-trailing-whitespace'
     Plug 'dracula/vim', { 'as': 'dracula' }
@@ -32,7 +32,7 @@ endif
 
 syntax on
 
-if filereadable(expand("$HOME/.vim/plugged/dracula/colors/dracula.vim"))
+if filereadable(expand('~/.local/share/nvim/plugged/dracula/colors/dracula.vim'))
     colorscheme dracula
     highlight Normal ctermbg=NONE
 endif

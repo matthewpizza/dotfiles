@@ -6,7 +6,16 @@ tic -o $HOME/.terminfo terminfo/xterm-256color.terminfo
 tic -o $HOME/.terminfo terminfo/tmux-256color.terminfo
 tic -o $HOME/.terminfo terminfo/tmux.terminfo
 
+# Set vars for context
+if type nvim > /dev/null; then
+    vimdir=$HOME/.local/share/nvim
+    vimfile=init.vim
+else
+    vimdir=$HOME/.vim
+    vimfile=.vimrc
+fi
+
 # Move things into place
-rm -rf $HOME/.vim
-cp .vimrc $HOME/.vimrc
+rm -rf $vimdir
+cp .vimrc $HOME/$vimfile
 cp .tmux.conf $HOME/.tmux.conf

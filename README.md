@@ -25,6 +25,7 @@ Ripped from:
 
 TODO:
 
+- Conditionals for vim-plug and vim/nvim
 - [`stow`](https://www.gnu.org/software/stow/)
 - PHPDoc
 - code folding
