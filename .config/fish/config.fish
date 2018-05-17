@@ -14,7 +14,7 @@ function fuck
 end
 
 # EDITOR
-set EDITOR /usr/bin/vim
+set EDITOR vim
 
 # PATH
 set PATH $HOME/.composer/vendor/bin $PATH
