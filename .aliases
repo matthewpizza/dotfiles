@@ -1,0 +1,8 @@
+# Aliases
+
+## Servers
+alias httpy="python -m SimpleHTTPServer"
+alias httphp="php -S localhost:8000"
+
+## Services
+alias lsusb="system_profiler SPUSBDataType"
