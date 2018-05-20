@@ -16,6 +16,7 @@ call plug#begin('~/.local/share/nvim/plugged')
     " Plug 'ludovicchabant/vim-gutentags'
     Plug 'mustache/vim-mustache-handlebars'
     Plug 'sheerun/vim-polyglot'             " better syntax highlighting
+    Plug 'tomtom/tcomment_vim'              " easier code commenting
     Plug 'vim-airline/vim-airline'          " tabline uses buffers
 call plug#end()
 
