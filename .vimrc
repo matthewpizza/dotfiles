@@ -17,7 +17,6 @@ call plug#begin('~/.local/share/nvim/plugged')
     Plug 'mustache/vim-mustache-handlebars'
     Plug 'sheerun/vim-polyglot'             " better syntax highlighting
     Plug 'tomtom/tcomment_vim'              " easier code commenting
-    Plug 'tpope/vim-sleuth'                 " detect current file indenting
     Plug 'vim-airline/vim-airline'          " tabline uses buffers
 call plug#end()
 
