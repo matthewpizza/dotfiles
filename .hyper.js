@@ -5,7 +5,7 @@
 module.exports = {
   config: {
     // default font size in pixels for all tabs
-    fontSize: 15,
+    fontSize: 14,
 
     // font family with optional fallbacks
     fontFamily: 'Fira Code',
