@@ -127,7 +127,11 @@ let g:airline_powerline_fonts = 1            " TODO: iTerm vertical character sp
 let g:gitgutter_enabled = 1
 
 " buffer nav
-nnoremap <c-w><c-w> :bdelete<CR>
+let mapleader = ","
+map <Leader>a :bprev<CR>
+map <Leader>s :bnext<CR>
+map <Leader>d :bdelete<CR>
+nnoremap <Leader><Leader> <C-^>
 
 " git commit message
 autocmd FileType gitcommit call setpos('.', [0, 1, 1, 0]) " start on first line always
