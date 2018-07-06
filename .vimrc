@@ -134,6 +134,9 @@ map <Leader>s :bnext<CR>
 map <Leader>d :bdelete<CR>
 nnoremap <Leader><Leader> <C-^>
 
+" remember open buffers
+set viminfo^=%
+
 " git commit message
 autocmd FileType gitcommit call setpos('.', [0, 1, 1, 0]) " start on first line always
 
