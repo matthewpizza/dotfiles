@@ -102,9 +102,10 @@ set textwidth=0  " no hard warp
 set wrapmargin=0 " same as above
 set wrap         " 'visual' wrapping
 
-" TODO: disabled for now because it makes code unreadable
-" set spell
-" set spelllang=en_us
+" spellcheck
+autocmd BufRead,BufNewFile *.md setlocal spell
+autocmd FileType gitcommit setlocal spell
+set complete+=kspell
 
 " fzf
 nnoremap <c-p> :FZF<CR>
