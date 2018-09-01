@@ -22,6 +22,7 @@ Ripped from:
 - [v/dotfiles](https://github.com/v/dotfiles)
 - [noopkat/dotfiles](https://github.com/noopkat/dotfiles)
 - [wincent/wincent](https://github.com/wincent/wincent)
+- [waferbaby/dotfiles](https://github.com/waferbaby/dotfiles)
 
 TODO:
 

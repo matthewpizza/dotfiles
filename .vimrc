@@ -41,6 +41,7 @@ if filereadable(expand('~/.local/share/nvim/plugged/dracula/colors/dracula.vim')
 endif
 
 " editor
+set autoread       " :e to reload
 set cursorline     " highlight current line
 set encoding=utf-8
 set hidden         " don't require save when switching
@@ -48,9 +49,11 @@ set history=1000   " undo more
 set lazyredraw
 set mouse=a        " mouse interactions
 set nocompatible   " don't do dumb vi things with arrow keys
+set noshowmode     " hides -- INSERT -- from the status line
 set number
 set relativenumber
 set ruler
+set shortmess+=I   " don't show the intro message when opening
 set title
 
 " swap
