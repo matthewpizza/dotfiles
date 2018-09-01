@@ -3,10 +3,6 @@ A mellow amount of configuration.
 - [Fira Code](https://github.com/tonsky/FiraCode)
 - [`fd`](https://github.com/sharkdp/fd)
 
-`fish`:
-
-- [fisherman](https://github.com/fisherman/fisherman)
-
 Ripped from:
 
 - [frnsys/dippindots](https://github.com/frnsys/dippindots)

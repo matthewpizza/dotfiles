@@ -8,13 +8,12 @@ if type nvim > /dev/null 2>&1
     alias vim='nvim'
 end
 
-# fuck (https://github.com/nvbn/thefuck)
-function fuck
-    eval thefuck $history[1]
-end
-
 # EDITOR
 set EDITOR vim
 
 # PATH
 set PATH $HOME/.composer/vendor/bin $PATH
+
+if test -z "$TMUX"
+    tmux attach; or tmux new-session -A -s pizza
+end
