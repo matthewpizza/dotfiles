@@ -13,7 +13,7 @@ call plug#begin('~/.local/share/nvim/plugged')
     Plug 'editorconfig/editorconfig-vim'
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
     Plug 'junegunn/fzf.vim'
-    Plug 'junegunn/vim-easy-align'          " TODO: key mapping to make this easier
+    " Plug 'junegunn/vim-easy-align'
     " Plug 'ludovicchabant/vim-gutentags'
     Plug 'mustache/vim-mustache-handlebars'
     Plug 'sheerun/vim-polyglot'             " better syntax highlighting
