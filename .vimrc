@@ -13,9 +13,7 @@ call plug#begin('~/.local/share/nvim/plugged')
     Plug 'editorconfig/editorconfig-vim'
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
     Plug 'junegunn/fzf.vim'
-    " Plug 'junegunn/vim-easy-align'
     " Plug 'ludovicchabant/vim-gutentags'
-    Plug 'mileszs/ack.vim'
     Plug 'mustache/vim-mustache-handlebars'
     Plug 'raimondi/delimitmate'             " auto-complete quotes etc in insert mode
     Plug 'sheerun/vim-polyglot'             " better syntax highlighting
@@ -118,20 +116,16 @@ set complete+=kspell
 " fzf as ctrl-p
 nnoremap <c-p> :FZF<CR>
 
-" find in files with ack
-nnoremap <Leader>f :Ack<Space>
-
-" find the word under the cursor
-" https://robots.thoughtbot.com/faster-grepping-in-vim
-nnoremap K :Ack! "\b<C-R><C-W>\b"<CR>:cw<CR>
-
 if executable('ag')
-    let g:ackprg = 'ag --hidden --ignore .git --vimgrep'
-    let $FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
-endif
+    " find in files with fzf
+    " TODO: why no hidden files
+    nnoremap <Leader>f :Ag<Space>
 
-if executable('fd')
-    let $FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
+    " find the word under the cursor
+    " https://robots.thoughtbot.com/faster-grepping-in-vim
+    nnoremap K :Ag! "\b<C-R><C-W>\b"<CR>:cw<CR>
+
+    let $FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
 endif
 
 " airline
