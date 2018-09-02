@@ -21,3 +21,4 @@ fi
 rm -rf $vimdir
 cp .vimrc $vimfile
 cp .tmux.conf $HOME/.tmux.conf
+cp .aliases $HOME/.aliases

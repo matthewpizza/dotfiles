@@ -5,4 +5,12 @@ alias httpy="python -m SimpleHTTPServer"
 alias httphp="php -S localhost:8000"
 
 ## Services
+alias pingnet="ping 192.168.1.255"
 alias lsusb="system_profiler SPUSBDataType"
+
+## Always use neovim
+alias vim="nvim"
+
+## Always show hidden files with ag
+## There is most definitely a better way to do this
+alias ag="ag --hidden"
