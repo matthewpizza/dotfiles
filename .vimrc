@@ -15,6 +15,7 @@ call plug#begin('~/.local/share/nvim/plugged')
     Plug 'junegunn/fzf.vim'
     " Plug 'junegunn/vim-easy-align'
     " Plug 'ludovicchabant/vim-gutentags'
+    Plug 'mileszs/ack.vim'
     Plug 'mustache/vim-mustache-handlebars'
     Plug 'raimondi/delimitmate'             " auto-complete quotes etc in insert mode
     Plug 'sheerun/vim-polyglot'             " better syntax highlighting
@@ -76,6 +77,9 @@ set smartindent           " knows when to increase indentation
 set softtabstop=4         " when hitting tab
 filetype indent plugin on
 
+" override / to be , for finger sanity
+let mapleader = ","
+
 " move w/ wrap
 nnoremap j gj
 nnoremap k gk
@@ -111,12 +115,18 @@ autocmd BufRead,BufNewFile *.md setlocal spell
 autocmd FileType gitcommit setlocal spell
 set complete+=kspell
 
-" fzf
+" fzf as ctrl-p
 nnoremap <c-p> :FZF<CR>
 
+" find in files with ack
+nnoremap <Leader>f :Ack<Space>
+
+" find the word under the cursor
 " https://robots.thoughtbot.com/faster-grepping-in-vim
+nnoremap K :Ack! "\b<C-R><C-W>\b"<CR>:cw<CR>
+
 if executable('ag')
-    set grepprg=ag\ --nogroup\ --nocolor
+    let g:ackprg = 'ag --hidden --ignore .git --vimgrep'
     let $FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
 endif
 
@@ -132,7 +142,6 @@ let g:airline_powerline_fonts = 1            " TODO: iTerm vertical character sp
 let g:gitgutter_enabled = 1
 
 " buffer nav
-let mapleader = ","
 map <Leader>a :bprev<CR>
 map <Leader>s :bnext<CR>
 map <Leader>d :bdelete<CR>
