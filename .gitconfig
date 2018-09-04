@@ -1,15 +1,9 @@
-[user]
-    name = Matthew Spencer
-    email = hello@thisismatthew.com
-[credential]
-    helper = osxkeychain
-[push]
-    default = matching
-[filter "media"]
-    required = true
-    clean = git media clean %f
-    smudge = git media smudge %f
 [core]
-    excludesfile = ~/.gitignore_global
-    editor = vim
-    commentchar = ";"
+    commentChar = ";"
+    editor = nvim
+[alias]
+    rpull = pull --rebase --prune
+    purll = pull --rebase --prune
+    prull = pull --rebase --prune
+    rpul = pull --rebase --prune
+    statuts = status
