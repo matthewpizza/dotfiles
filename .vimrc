@@ -43,6 +43,7 @@ endif
 set autoread       " :e to reload
 set cursorline     " highlight current line
 set encoding=utf-8
+set termencoding=utf-8
 set hidden         " don't require save when switching
 set history=1000   " undo more
 set lazyredraw
