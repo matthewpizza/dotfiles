@@ -12,7 +12,7 @@ end
 set EDITOR vim
 
 # PATH
-set PATH $HOME/.composer/vendor/bin $PATH
+set PATH /usr/local/bin /usr/local/sbin $HOME/.composer/vendor/bin $PATH
 
 if test -z "$TMUX"
     tmux attach; or tmux new-session -A -s pizza
