@@ -125,16 +125,14 @@ set complete+=kspell
 " fzf as ctrl-p
 nnoremap <c-p> :FZF<CR>
 
-if executable('ag')
+if executable('rg')
     " find in files with fzf
-    " TODO: why no hidden files
-    nnoremap <Leader>f :Ag<Space>
+    nnoremap <Leader>f :Rg<Space>
 
     " find the word under the cursor
-    " https://robots.thoughtbot.com/faster-grepping-in-vim
-    nnoremap K :Ag! "\b<C-R><C-W>\b"<CR>:cw<CR>
+    nnoremap K :Rg! "\b<C-R><C-W>\b"<CR>:cw<CR>
 
-    let $FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
+    let $FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!.git/*"'
 endif
 
 " airline

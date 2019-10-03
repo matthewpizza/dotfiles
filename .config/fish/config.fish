@@ -13,3 +13,8 @@ set EDITOR vim
 
 # PATH
 set PATH /usr/local/bin /usr/local/sbin $HOME/.composer/vendor/bin $PATH
+
+# fzf and ripgrep
+if type -q rg
+    set FZF_DEFAULT_COMMAND 'rg --files --no-ignore --hidden --follow --glob "!.git/*"'
+end
