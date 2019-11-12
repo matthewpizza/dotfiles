@@ -6,6 +6,7 @@ brew "ctags"
 brew "dirmngr"
 brew "dnsmasq", restart_service: true
 brew "emacs", restart_service: true
+brew "fd"
 brew "ffmpeg"
 brew "figlet"
 brew "fish"
