@@ -1,7 +1,8 @@
+# .
+
 A mellow amount of configuration.
 
-
-Ripped from:
+## Ripped from
 
 - [frnsys/dippindots](https://github.com/frnsys/dippindots)
 - [holman/dotfiles](https://github.com/holman/dotfiles)
@@ -19,14 +20,16 @@ Ripped from:
 - [waferbaby/dotfiles](https://github.com/waferbaby/dotfiles)
 - [wincent/wincent](https://github.com/wincent/wincent)
 
-TODO:
+## TODO
 
-- Conditionals for vim-plug and vim/nvim
-- [`stow`](https://www.gnu.org/software/stow/)
-- PHPDoc
-- code folding
+- [`stow`](https://www.gnu.org/software/stow/) — vaguely I think this is a symlink thing?
+- For `vim`
+    - PHPDoc
+    - code folding
+- Maybe some parity b/w `fish` and `zsh` — or make work use `fish`
+- tmux autoconnect after suspend with that dumb clod vm
 
-Test color support:
+## Test color support for `mosh` lots of colors
 
 ```bash
 awk 'BEGIN{
@@ -43,3 +46,5 @@ awk 'BEGIN{
     printf "\n";
 }'
 ```
+
+god I love `mosh`, definitely stole this from somewhere…
