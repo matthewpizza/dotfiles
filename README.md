@@ -26,7 +26,6 @@ TODO:
 - [`stow`](https://www.gnu.org/software/stow/)
 - PHPDoc
 - code folding
-- Brewfile
 
 Test color support:
 
