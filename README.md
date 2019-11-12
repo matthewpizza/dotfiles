@@ -6,19 +6,20 @@ A mellow amount of configuration.
 Ripped from:
 
 - [frnsys/dippindots](https://github.com/frnsys/dippindots)
+- [holman/dotfiles](https://github.com/holman/dotfiles)
+- [jondashkyle/dotfiles](https://github.com/jondashkyle/dotfiles)
 - [keeganlow/dotfiles](https://github.com/keeganlow/dotfiles)
 - [mathiasbynens/dotfiles](https://github.com/mathiasbynens/dotfiles)
-- [holman/dotfiles](https://github.com/holman/dotfiles)
-- [ryanb/dotfiles](https://github.com/ryanb/dotfiles)
-- [rtomayko/dotfiles](https://github.com/rtomayko/dotfiles)
-- [jondashkyle/dotfiles](https://github.com/jondashkyle/dotfiles)
-- [paulirish/dotfiles](https://github.com/paulirish/dotfiles)
+- [noopkat/dotfiles](https://github.com/noopkat/dotfiles)
 - [oe/dotfiles](https://github.com/oe/dotfiles)
+- [paulirish/dotfiles](https://github.com/paulirish/dotfiles)
+- [pje/dotfiles/](https://github.com/pje/dotfiles/)
+- [rtomayko/dotfiles](https://github.com/rtomayko/dotfiles)
+- [ryanb/dotfiles](https://github.com/ryanb/dotfiles)
 - [torrez/dotvim](https://github.com/torrez/dotvim)
 - [v/dotfiles](https://github.com/v/dotfiles)
-- [noopkat/dotfiles](https://github.com/noopkat/dotfiles)
-- [wincent/wincent](https://github.com/wincent/wincent)
 - [waferbaby/dotfiles](https://github.com/waferbaby/dotfiles)
+- [wincent/wincent](https://github.com/wincent/wincent)
 
 TODO:
 
