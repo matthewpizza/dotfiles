@@ -36,3 +36,8 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
     rsync -va --delete-after FiraCode/distr/otf/ $HOME/Library/Fonts/FiraCode/
     rm -rf FiraCode
 fi
+
+# Music Player Daemon
+mkdir -p $HOME/.mpd/playlists
+touch $HOME/.mpd/{mpd.db,mpd.log,mpd.pid,mpdstate}
+cp .mpd/mpd.config $HOME/.mpd/mpd.config

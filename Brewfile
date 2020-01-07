@@ -37,7 +37,9 @@ brew "lzo"
 brew "mas"
 brew "mkvtoolnix"
 brew "mosh", args: ["HEAD"]
+brew "mpd"
 brew "mysql", restart_service: true
+brew "ncmpcpp"
 brew "neovim"
 brew "nginx", restart_service: true
 brew "node"
