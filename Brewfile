@@ -38,6 +38,7 @@ brew "mas"
 brew "mkvtoolnix"
 brew "mosh", args: ["HEAD"]
 brew "mpd"
+brew "mpdscribble"
 brew "mysql", restart_service: true
 brew "ncmpcpp"
 brew "neovim"
