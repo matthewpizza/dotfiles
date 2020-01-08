@@ -13,7 +13,6 @@ A mellow amount of configuration.
 - [oe/dotfiles](https://github.com/oe/dotfiles)
 - [paulirish/dotfiles](https://github.com/paulirish/dotfiles)
 - [pje/dotfiles/](https://github.com/pje/dotfiles/)
-- [rtomayko/dotfiles](https://github.com/rtomayko/dotfiles)
 - [ryanb/dotfiles](https://github.com/ryanb/dotfiles)
 - [torrez/dotvim](https://github.com/torrez/dotvim)
 - [v/dotfiles](https://github.com/v/dotfiles)
