@@ -17,4 +17,9 @@ def_key "ctrl-j"
     page_down
 
 def_key "ctrl-k"
-   page_up
+    page_up
+
+# pause on quit
+def_key "q"
+    pause
+    quit
