@@ -41,3 +41,8 @@ fi
 mkdir -p $HOME/.mpd/playlists
 touch $HOME/.mpd/{mpd.db,mpd.log,mpd.pid,mpdstate}
 cp .mpd/mpd.conf $HOME/.mpd/mpd.conf
+
+# NCurses Music Player Client (Plus Plus)
+mkdir $HOME/.ncmpcpp
+cp .ncmpcpp/bindings $HOME/.ncmpcpp/bindings
+cp .ncmpcpp/config $HOME/.ncmpcpp/config
