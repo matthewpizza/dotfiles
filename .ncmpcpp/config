@@ -1,6 +1,11 @@
 # settings
 # https://github.com/arybczak/ncmpcpp/blob/master/doc/config
 
+## media library
+media_library_albums_split_by_date = no
+media_library_sort_by_mtime = no
+song_library_format = {%t}|{%f}
+
 ## gets rid of the track column and makes the song title a bit narrower
 song_columns_list_format = (20)[]{a} (40)[white]{t|f:Title} (20)[cyan]{b} (7f)[magenta]{l}
 
