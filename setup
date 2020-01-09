@@ -46,3 +46,8 @@ cp .mpd/mpd.conf $HOME/.mpd/mpd.conf
 mkdir -p $HOME/.ncmpcpp
 cp .ncmpcpp/bindings $HOME/.ncmpcpp/bindings
 cp .ncmpcpp/config $HOME/.ncmpcpp/config
+
+# Karibiner
+# Use to make media keys work for mpc
+mkdir -p $HOME/.config/karabiner
+cp .config/karabiner/karabiner.json $HOME/.config/karabiner
