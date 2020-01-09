@@ -27,7 +27,6 @@ A mellow amount of configuration.
     - code folding
 - Maybe some parity b/w `fish` and `zsh` — or make work use `fish`
 - tmux autoconnect after suspend with that dumb clod vm
-- media keys for mpd https://github.com/pushrax/osxmpdkeys
 
 ## Test color support for `mosh` lots of colors
 
