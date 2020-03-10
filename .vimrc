@@ -34,7 +34,10 @@ endif
 
 syntax on
 
-colorscheme night-owl
+if filereadable(expand('~/.local/share/nvim/plugged/night-owl.vim/colors/night-owl.vim'))
+    colorscheme night-owl
+    highlight Normal ctermbg=NONE
+endif
 
 " editor
 set autoread       " :e to reload
