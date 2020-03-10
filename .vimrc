@@ -19,6 +19,7 @@ call plug#begin('~/.local/share/nvim/plugged')
     Plug 'sheerun/vim-polyglot'             " better syntax highlighting
     Plug 'tomtom/tcomment_vim'              " easier code commenting
     Plug 'vim-airline/vim-airline'          " tabline uses buffers
+    Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 " colors
@@ -36,6 +37,7 @@ syntax on
 
 if filereadable(expand('~/.local/share/nvim/plugged/night-owl.vim/colors/night-owl.vim'))
     colorscheme night-owl
+    let g:airline_theme='night_owl'
     highlight Normal ctermbg=NONE
 endif
 
