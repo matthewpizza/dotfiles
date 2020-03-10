@@ -55,4 +55,11 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
     # vscode
     mkdir -p $HOME/Library/Application\ Support/Code/User/
     cp vscode/settings.json $HOME/Library/Application\ Support/Code/User/
+
+    # vscode extensions
+    code --install-extension sdras.night-owl
+    code --install-extension liximomo.sftp
+    code --install-extension ms-vscode.sublime-keybindings
+    code --install-extension vscodevim.vim
+    code --install-extension fallenwood.viml
 fi

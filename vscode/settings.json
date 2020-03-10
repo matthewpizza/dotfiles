@@ -18,5 +18,6 @@
     "terminal.external.osxExec": "Hyper.app",
     "terminal.integrated.fontSize": 15,
     "terminal.integrated.fontFamily": "Source Code Pro",
-    "breadcrumbs.enabled": false
+    "breadcrumbs.enabled": false,
+    "files.insertFinalNewline": true
 }
