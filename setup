@@ -30,11 +30,10 @@ if [ -x "$(command -v fish)" ]; then
     cp .config/fish/functions/fish_prompt.fish $HOME/.config/fish/functions/fish_prompt.fish
 fi
 
-# TODO there must be an easier way
-if [[ "$OSTYPE" == "darwin"* ]] && [[ ! -d "${HOME}/Library/Fonts/FiraCode/" ]]; then
-    git clone git@github.com:tonsky/FiraCode.git
-    rsync -va --delete-after FiraCode/distr/otf/ $HOME/Library/Fonts/FiraCode/
-    rm -rf FiraCode
+if [[ "$OSTYPE" == "darwin"* ]] && [[ ! -d "${HOME}/Library/Fonts/Source-Code-Pro/" ]]; then
+    git clone git@github.com:adobe-fonts/source-code-pro.git
+    rsync -va --delete-after source-code-pro/OTF/ $HOME/Library/Fonts/Source-Code-Pro/
+    rm -rf source-code-pro
 fi
 
 # Music Player Daemon
