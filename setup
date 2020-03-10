@@ -23,9 +23,10 @@ cp .vimrc $vimfile
 cp .tmux.conf $HOME/.tmux.conf
 cp .aliases $HOME/.aliases
 cp .agignore $HOME/.agignore
+cp .hyper.js $HOME/.hyper.js
 
 if [ -x "$(command -v fish)" ]; then
-    mkdir -p $HOME/.config/fish
+    mkdir -p $HOME/.config/fish/functions
     cp .config/fish/config.fish $HOME/.config/fish/config.fish
     cp .config/fish/functions/fish_prompt.fish $HOME/.config/fish/functions/fish_prompt.fish
 fi
