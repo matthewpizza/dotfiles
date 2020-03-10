@@ -19,5 +19,7 @@
     "terminal.integrated.fontSize": 15,
     "terminal.integrated.fontFamily": "Source Code Pro",
     "breadcrumbs.enabled": false,
-    "files.insertFinalNewline": true
+    "files.insertFinalNewline": true,
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false
 }
