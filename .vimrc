@@ -9,7 +9,7 @@ endif
 call plug#begin('~/.local/share/nvim/plugged')
     Plug 'airblade/vim-gitgutter'
     Plug 'bronson/vim-trailing-whitespace'
-    Plug 'dracula/vim', { 'as': 'dracula' }
+    Plug 'haishanh/night-owl.vim'
     Plug 'editorconfig/editorconfig-vim'
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
     Plug 'junegunn/fzf.vim'
@@ -34,10 +34,7 @@ endif
 
 syntax on
 
-if filereadable(expand('~/.local/share/nvim/plugged/dracula/colors/dracula.vim'))
-    colorscheme dracula
-    highlight Normal ctermbg=NONE
-endif
+colorscheme night-owl
 
 " editor
 set autoread       " :e to reload
