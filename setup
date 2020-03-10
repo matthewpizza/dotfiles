@@ -36,17 +36,23 @@ if [[ "$OSTYPE" == "darwin"* ]] && [[ ! -d "${HOME}/Library/Fonts/Source-Code-Pr
     rm -rf source-code-pro
 fi
 
-# Music Player Daemon
-mkdir -p $HOME/.mpd/playlists
-touch $HOME/.mpd/{mpd.db,mpd.log,mpd.pid,mpdstate}
-cp .mpd/mpd.conf $HOME/.mpd/mpd.conf
+if [[ "$OSTYPE" == "darwin"* ]]; then
+    # Music Player Daemon
+    mkdir -p $HOME/.mpd/playlists
+    touch $HOME/.mpd/{mpd.db,mpd.log,mpd.pid,mpdstate}
+    cp .mpd/mpd.conf $HOME/.mpd/mpd.conf
 
-# NCurses Music Player Client (Plus Plus)
-mkdir -p $HOME/.ncmpcpp
-cp .ncmpcpp/bindings $HOME/.ncmpcpp/bindings
-cp .ncmpcpp/config $HOME/.ncmpcpp/config
+    # NCurses Music Player Client (Plus Plus)
+    mkdir -p $HOME/.ncmpcpp
+    cp .ncmpcpp/bindings $HOME/.ncmpcpp/bindings
+    cp .ncmpcpp/config $HOME/.ncmpcpp/config
 
-# Karibiner
-# Use to make media keys work for mpc
-mkdir -p $HOME/.config/karabiner
-cp .config/karabiner/karabiner.json $HOME/.config/karabiner
+    # Karibiner
+    # Use to make media keys work for mpc
+    mkdir -p $HOME/.config/karabiner
+    cp .config/karabiner/karabiner.json $HOME/.config/karabiner
+
+    # vscode
+    mkdir -p $HOME/Library/Application\ Support/Code/User/
+    cp vscode/settings.json $HOME/Library/Application\ Support/Code/User/
+fi

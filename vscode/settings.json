@@ -1,0 +1,22 @@
+{
+    "workbench.iconTheme": null,
+    "editor.fontSize": 15,
+    "editor.fontFamily": "Source Code Pro",
+    "editor.renderWhitespace": "all",
+    "editor.cursorStyle": "block",
+    "workbench.preferredDarkColorTheme": "Dracula",
+    "workbench.statusBar.visible": true,
+    "workbench.colorTheme": "Night Owl",
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.scrollBeyondLastLine": true,
+    "editor.wordWrap": "on",
+    "editor.formatOnPaste": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.snippetSuggestions": "top",
+    "workbench.activityBar.visible": false,
+    "terminal.external.linuxExec": "xterm256",
+    "terminal.external.osxExec": "Hyper.app",
+    "terminal.integrated.fontSize": 15,
+    "terminal.integrated.fontFamily": "Source Code Pro",
+    "breadcrumbs.enabled": false
+}
