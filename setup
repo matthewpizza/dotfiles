@@ -57,9 +57,15 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
     cp vscode/settings.json $HOME/Library/Application\ Support/Code/User/
 
     # vscode extensions
-    code --install-extension sdras.night-owl
-    code --install-extension liximomo.sftp
-    code --install-extension ms-vscode.sublime-keybindings
-    code --install-extension vscodevim.vim
+    code --install-extension bmewburn.vscode-intelephense-client
+    code --install-extension dbaeumer.vscode-eslint
+    code --install-extension eamodio.gitlens
+    code --install-extension esbenp.prettier-vscode
     code --install-extension fallenwood.viml
+    code --install-extension lici.require-js
+    code --install-extension ms-vscode-remote.remote-ssh
+    code --install-extension ms-vscode-remote.remote-ssh-edit
+    code --install-extension ms-vscode.sublime-keybindings
+    code --install-extension sdras.night-owl
+    code --install-extension vscodevim.vim
 fi
