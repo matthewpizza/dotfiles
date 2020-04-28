@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+if [[ -x "./install/$(uname)" ]]; then
+    ./install/$(uname)
+fi
