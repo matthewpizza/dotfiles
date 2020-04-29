@@ -9,5 +9,6 @@ if [ $SHELL != $(which zsh) ]; then
     chsh -s `which zsh`
 fi
 
-# https://github.com/sindresorhus/pure
-npm i -g pure-prompt
+if [[ ! -d "${HOME}/.oh-my-zsh/" ]]; then
+    bash -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+fi
