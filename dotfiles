@@ -28,7 +28,9 @@ fi
 
 # Install with package manager
 while read package; do
-    $installer install $package
+    if ! is_installed $package; then
+        $installer install $package
+    fi
 done < $DOTFILES/config/packages
 
 # Custom installers
