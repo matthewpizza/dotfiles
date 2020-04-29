@@ -2,5 +2,6 @@ aliases
 git
 mpd
 neovim
+ripgrep
 tmux
 zsh

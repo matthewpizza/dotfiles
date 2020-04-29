@@ -7,3 +7,6 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
+
+export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc"
+export FZF_DEFAULT_COMMAND='rg --files'
