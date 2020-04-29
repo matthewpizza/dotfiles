@@ -23,6 +23,14 @@ else
     exit 1
 fi
 
+# Install with package manager
 while read package; do
     $installer install $package
 done < "$base_path/config/packages"
+
+# Custom installers
+for installer in $base_path/installers/*; do
+    if [ -x $installer ]; then
+        $installer
+    fi
+done

@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+# Better color support for terminfo
+
+# Threre’s gotta be a better way then setting this in each file
+# Maybe an env var?
+base_path=$(dirname $(cd -P -- $(dirname -- $BASH_SOURCE[0]) && pwd -P))
+
+# Delete the current compiled file
+rm -rf $HOME/.terminfo
+
+# Compile a new file from the source files
+tic -o $HOME/.terminfo $base_path/files/terminfo/xterm-256color.terminfo
+tic -o $HOME/.terminfo $base_path/files/terminfo/tmux-256color.terminfo
+tic -o $HOME/.terminfo $base_path/files/terminfo/tmux.terminfo
