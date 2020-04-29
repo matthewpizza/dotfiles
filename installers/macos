@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+packages=(
+    mpd
+)
+
+for package in ${packages[@]}; do
+    brew install $package
+done
