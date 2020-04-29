@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-base_path=$(cd -P -- $(dirname -- $BASH_SOURCE[0]) && pwd -P)
+export DOTFILES=$(cd -P -- $(dirname -- $BASH_SOURCE[0]) && pwd -P)
 unix_name=$(uname)
 
 is_installed() {
@@ -26,15 +26,15 @@ fi
 # Install with package manager
 while read package; do
     $installer install $package
-done < "$base_path/config/packages"
+done < $DOTFILES/config/packages
 
 # Custom installers
-for installer in $base_path/installers/*; do
+for installer in $DOTFILES/installers/*; do
     if [ -x $installer ]; then
         $installer
     fi
 done
 
 while read dotfile; do
-    stow --verbose --restow --dir="$base_path/files" --target=$HOME $dotfile
-done < "$base_path/config/dotfiles"
+    stow --verbose --restow --dir=$DOTFILES/files --target=$HOME $dotfile
+done < $DOTFILES/config/dotfiles

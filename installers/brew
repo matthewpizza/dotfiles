@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-base_path=$(dirname $(cd -P -- $(dirname -- $BASH_SOURCE[0]) && pwd -P))
-
 while read package; do
     brew install $package
-done < "$base_path/config/brew"
+done < $DOTFILES/config/brew
