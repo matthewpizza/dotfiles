@@ -5,7 +5,9 @@
 # I just want one shell to use
 # Thusly zsh
 # TODO?? chef out fish???
-chsh -s `which zsh`
+if [ $SHELL != $(which zsh) ]; then
+    chsh -s `which zsh`
+fi
 
 # https://github.com/sindresorhus/pure
 npm i -g pure-prompt
