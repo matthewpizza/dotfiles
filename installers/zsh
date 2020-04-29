@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+# Work doesn’t have fish and tho you know
+# ur boi loves fish
+# I just want one shell to use
+# Thusly zsh
+# TODO?? chef out fish???
+chsh -s `which zsh`
