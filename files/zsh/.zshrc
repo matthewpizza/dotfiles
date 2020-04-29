@@ -12,3 +12,7 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
+
+if [ -f $HOME/.fzf.zsh ]; then
+    source $HOME/.fzf.zsh
+fi
