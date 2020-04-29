@@ -16,3 +16,8 @@ source $ZSH/oh-my-zsh.sh
 if [ -f $HOME/.fzf.zsh ]; then
     source $HOME/.fzf.zsh
 fi
+
+# attach to pizza on load
+if [[ -z "$TMUX" ]] && [ "$SSH_CONNECTION" != "" ]; then
+    tmux attach-session -t pizza || tmux new-session -s pizza
+fi
