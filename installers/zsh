@@ -6,3 +6,6 @@
 # Thusly zsh
 # TODO?? chef out fish???
 chsh -s `which zsh`
+
+# https://github.com/sindresorhus/pure
+npm i -g pure-prompt
