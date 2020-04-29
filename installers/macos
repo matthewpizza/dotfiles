@@ -2,6 +2,7 @@
 
 packages=(
     mpd
+    ncmpcpp
 )
 
 for package in ${packages[@]}; do
