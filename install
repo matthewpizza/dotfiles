@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+
+base_path=$(cd -P -- $(dirname -- $BASH_SOURCE[0]) && pwd -P)
+unix_name=$(uname)
+
+is_installed() {
+    command -v "$1" >/dev/null
+}
+
+if [ $unix_name = "Darwin" ]; then
+    if ! is_installed brew; then
+        bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+    fi
+    installer="brew"
+elif [ $unix_name = "Linux" ]; then
+    if is_installed yum; then
+        installer="yum -y"
+    elif is_installed apt-get; then
+        installer="apt-get -y"
+    fi
+else
+    echo "Something unexpected happened"
+    exit 1
+fi
+
+while read package; do
+    $installer install $package
+done < "$base_path/config/packages"

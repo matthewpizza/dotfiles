@@ -2,9 +2,7 @@
 
 base_path=$(cd -P -- $(dirname -- $BASH_SOURCE[0]) && pwd -P)
 
-if [[ -x "./install/$(uname)" ]]; then
-    ./install/$(uname)
-fi
+./install
 
 while read dotfile; do
     stow --verbose --restow --dir="$base_path/files" --target=$HOME $dotfile
