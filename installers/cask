@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
 while read package; do
-    brew cask install $package
+    brew cask list $package || brew cask install $package
 done < $DOTFILES/config/cask
