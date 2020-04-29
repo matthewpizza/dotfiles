@@ -1,10 +1,7 @@
 #!/usr/bin/env bash
 
-packages=(
-    mpd
-    ncmpcpp
-)
+base_path=$(dirname $(cd -P -- $(dirname -- $BASH_SOURCE[0]) && pwd -P))
 
-for package in ${packages[@]}; do
+while read package; do
     brew install $package
-done
+done < "$base_path/config/brew"
