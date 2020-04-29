@@ -7,12 +7,12 @@ is_installed() {
     command -v "$1" >/dev/null
 }
 
-if [ $unix_name = "Darwin" ]; then
+if [ $unix_name == "Darwin" ]; then
     if ! is_installed brew; then
         bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
     fi
     installer="brew"
-elif [ $unix_name = "Linux" ]; then
+elif [ $unix_name == "Linux" ]; then
     if is_installed yum; then
         installer="yum -y"
     elif is_installed apt-get; then
