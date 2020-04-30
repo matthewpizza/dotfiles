@@ -1,10 +1,5 @@
 #!/usr/bin/env bash
 
-# Work doesn’t have fish and tho you know
-# ur boi loves fish
-# I just want one shell to use
-# Thusly zsh
-# TODO?? chef out fish???
 if [ $SHELL != $(which zsh) ]; then
     chsh -s `which zsh`
 fi
