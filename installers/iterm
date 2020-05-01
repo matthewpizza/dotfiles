@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+if [ $(uname) != "Darwin" ]; then
+    exit 0
+fi
+
+defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "$DOTFILES/files/iterm2"
+defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
