@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 
+read -rep "Install cask Applications (y/n) " -n 1
+
+if [[ ! $REPLY =~ ^[Yy]$ ]]; then
+    exit 1
+fi
+
 while read package; do
     brew cask list $package || brew cask install $package
 done < $DOTFILES/config/cask
