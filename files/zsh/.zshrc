@@ -12,6 +12,7 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
+source $HOME/.aliases
 
 if [ -f $HOME/.fzf.zsh ]; then
     source $HOME/.fzf.zsh
