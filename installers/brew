@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 
+is_installed() {
+    brew list "$1" > /dev/null 2>&1
+}
+
 while read package; do
-    brew list $package || brew install $package
+    if ! is_installed $package; then
+        brew install $package
+    fi
 done < $DOTFILES/config/brew

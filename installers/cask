@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+is_installed() {
+    brew cask list "$1" > /dev/null 2>&1
+}
+
 read -rep "Install cask Applications (y/n) " -n 1
 
 if [[ ! $REPLY =~ ^[Yy]$ ]]; then
@@ -7,5 +11,7 @@ if [[ ! $REPLY =~ ^[Yy]$ ]]; then
 fi
 
 while read package; do
-    brew cask list $package || brew cask install $package
+    if ! is_installed $package; then
+        brew cask install $package
+    fi
 done < $DOTFILES/config/cask
