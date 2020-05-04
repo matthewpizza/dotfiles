@@ -16,12 +16,13 @@
 * `cask`: macOS application
 * `dotfiles`: list of directories in `files` to `stow`
 * `library`: list of directories in `files` to `stow` into `~/Library/Application Support/`
+* `vscode`: list of extensions
 
 ### `files`
 
 * Symlinked to `$HOME` with `stow`: `aliases`, `git`, `mpd`, `ncmpcpp`, `neovim`, `ripgrep`, `tmux`, and `zsh`
 * Used in `installers`: `terminfo`
-* macOS application configuration: `iterm` and `sublime-text`
+* macOS application configuration: `iterm`, `sublime-text`, and `vscode`
 
 ### `installers`
 
@@ -30,6 +31,7 @@
 * `iterm`: set [iTerm](https://iterm2.com/) preferences and path to the plist in `files/iterm`
 * `mpd`: creates directories and files for [Music Player Daemon](https://www.musicpd.org/)
 * `terminfo`: compiles `$HOME/.terminfo` binary use `tic` from source files in `files/terminfo`
+* `vscode`: installs extension from `config/vscode`
 * `zsh`: installs [oh my zsh](https://ohmyz.sh/) and changes shell to `zsh`
 
 ## Modeled after
