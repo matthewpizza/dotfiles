@@ -7,6 +7,7 @@
 * If macOS install `brew` if not installed and `config/brew` and `config/cask` packages
 * Runs non-package setup and installation from `installers`
 * Symlink `files` listed in `config/dotfiles` using [`stow`](https://www.gnu.org/software/stow/)
+* Symlink macOS Application preference
 
 ### `config`
 
@@ -14,12 +15,13 @@
 * `brew`: macOS specific packages
 * `cask`: macOS application
 * `dotfiles`: list of directories in `files` to `stow`
+* `library`: list of directories in `files` to `stow` into `~/Library/Application Support/`
 
 ### `files`
 
 * Symlinked to `$HOME` with `stow`: `aliases`, `git`, `mpd`, `ncmpcpp`, `neovim`, `ripgrep`, `tmux`, and `zsh`
 * Used in `installers`: `terminfo`
-* macOS application configuration: `iterm`
+* macOS application configuration: `iterm` and `sublime-text`
 
 ### `installers`
 

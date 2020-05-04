@@ -43,3 +43,10 @@ done
 while read dotfile; do
     stow --verbose --restow --dir=$DOTFILES/files --target=$HOME $dotfile
 done < $DOTFILES/config/dotfiles
+
+# macOS Application Support
+if [ $unix_name == "Darwin" ]; then
+    while read file; do
+        stow --verbose --restow --dir=$DOTFILES/files --target="$HOME/Library/Application Support" $file
+    done < $DOTFILES/config/library
+fi
