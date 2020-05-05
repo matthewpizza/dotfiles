@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+if [ $(uname) != "Darwin" ]; then
+    exit 0
+fi
+
 while read extension; do
     code --install-extension $extension
 done < $DOTFILES/config/vscode
