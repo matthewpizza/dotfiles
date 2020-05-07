@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-if [[ $OSTYPE == "darwin"* ]] && [[ ! -d "${HOME}/Library/Fonts/Source-Code-Pro/" ]]; then
+if [ ! -d "${HOME}/Library/Fonts/Source-Code-Pro/" ]; then
     git clone git@github.com:adobe-fonts/source-code-pro.git
     rsync -va --delete-after source-code-pro/OTF/ $HOME/Library/Fonts/Source-Code-Pro/
     rm -rf source-code-pro

@@ -35,10 +35,19 @@ done < $DOTFILES/config/packages
 
 # Custom installers
 for installer in $DOTFILES/installers/*; do
-    if [ -x $installer ]; then
+    if [ -x $installer ] && [ ! -d $installer ]; then
         $installer
     fi
 done
+
+# OS-specific custom installers
+if [ -d $DOTFILES/installers/$unix_name ]; then
+    for installer in $DOTFILES/installers/$unix_name/*; do
+        if [ -x $installer ]; then
+            $installer
+        fi
+    done
+fi
 
 while read dotfile; do
     stow --verbose --restow --dir=$DOTFILES/files --target=$HOME $dotfile

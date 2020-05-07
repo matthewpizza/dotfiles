@@ -26,13 +26,14 @@
 
 ### `installers`
 
-* `brew` and `cask`: install `config/brew` and `config/cask` packages
-* `font`: install current preferred editor font [Source Code Pro](https://github.com/adobe-fonts/source-code-pro)
-* `iterm`: set [iTerm](https://iterm2.com/) preferences and path to the plist in `files/iterm`
-* `mpd`: creates directories and files for [Music Player Daemon](https://www.musicpd.org/)
-* `terminfo`: compiles `$HOME/.terminfo` binary use `tic` from source files in `files/terminfo`
-* `vscode`: installs extension from `config/vscode`
+* `terminfo`: compiles `$HOME/.terminfo` binary use `tic` from source files in `files/terinfo`
 * `zsh`: installs [oh my zsh](https://ohmyz.sh/) and changes shell to `zsh`
+* `Darwin`
+    * `brew` and `cask`: install `config/brew` and `config/cask` packages
+    * `font`: install current preferred editor font [Source Code Pro](https://github.com/adobe-fonts/source-code-pro)
+    * `iterm`: set [iTerm](https://iterm2.com/) preferences and path to the plist in `files/iterm`
+    * `mpd`: creates directories and files for [Music Player Daemon](https://www.musicpd.org/)
+    * `vscode`: installs extension from `config/vscode`
 
 ## Modeled after
 
