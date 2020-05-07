@@ -14,3 +14,5 @@ alias vim="nvim"
 ## Always show hidden files with ripgrep
 ## There is most definitely a better way to do this
 alias rg="rg --hidden"
+
+alias gdiff="gist -t diff"
