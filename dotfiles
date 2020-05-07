@@ -4,7 +4,15 @@ export DOTFILES=$(cd -P -- $(dirname -- $BASH_SOURCE[0]) && pwd -P)
 unix_name=$(uname)
 
 is_installed() {
-    command -v "$1" >/dev/null
+    if [ $1 == 'ripgrep' ]; then
+        beepboop='rg'
+    elif [ $1 == 'neovim' ]; then
+        beepboop='nvim'
+    else
+        beepboop=$1
+    fi
+
+    command -v "$beepboop" > /dev/null
 }
 
 if [ $unix_name == "Darwin" ]; then
