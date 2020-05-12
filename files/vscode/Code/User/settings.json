@@ -12,7 +12,7 @@
     "terminal.integrated.fontFamily": "Source Code Pro",
     "terminal.integrated.fontSize": 14,
     "terminal.external.linuxExec": "xterm256",
-    "workbench.activityBar.visible": false,
+    "workbench.activityBar.visible": true,
     "workbench.colorTheme": "Night Owl",
     "workbench.iconTheme": null,
     "workbench.startupEditor": "newUntitledFile",
