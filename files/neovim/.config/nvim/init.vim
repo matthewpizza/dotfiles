@@ -13,6 +13,7 @@ call plug#begin('~/.local/share/nvim/plugged')
     Plug 'editorconfig/editorconfig-vim'
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
     Plug 'junegunn/fzf.vim'
+    Plug 'junegunn/vim-slash'
     Plug 'mileszs/ack.vim'
     Plug 'mustache/vim-mustache-handlebars'
     Plug 'raimondi/delimitmate'             " auto-complete quotes etc in insert mode
