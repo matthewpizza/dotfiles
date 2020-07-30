@@ -4,7 +4,7 @@ is_installed() {
     brew cask list "$1" > /dev/null 2>&1
 }
 
-read -rep "Install cask Applications (y/n) " -n 1
+read -rep "Install cask Applications (y/N) " -n 1
 
 if [[ ! $REPLY =~ ^[Yy]$ ]]; then
     exit 1
