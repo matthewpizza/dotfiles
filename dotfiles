@@ -15,6 +15,34 @@ is_installed() {
     command -v "$beepboop" > /dev/null
 }
 
+attempt_stow() {
+    output=$(stow --verbose --restow --dir=$DOTFILES/files --target="$1" "$2" 2>&1)
+
+    # restow, suppress output
+    if [[ $output =~ 'UNLINK' ]]; then
+        return
+    fi
+
+    EXISTING_TARGET='existing target is neither a link nor a directory: '
+
+    if [[ ! $output =~ $EXISTING_TARGET ]]; then
+        # Some other error
+        echo "$output"
+        return
+    fi
+
+    # Target file exists and cannot be symlinked
+    file=$(echo "$output" | grep --max-count=1 --only-matching "$EXISTING_TARGET.*" | sed "s/$EXISTING_TARGET//")
+    # ^could be more concise^
+
+    # TODO: How to resolve?
+    # Show diff
+    # Backup and symlink
+    # Delete and symlink
+    # Choose version from diff
+    echo "File exists, skipping: $1/$file"
+}
+
 if [ $unix_name == "Darwin" ]; then
     if ! is_installed brew; then
         bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
@@ -58,12 +86,12 @@ if [ -d $DOTFILES/installers/$unix_name ]; then
 fi
 
 while read dotfile; do
-    stow --verbose --restow --dir=$DOTFILES/files --target=$HOME $dotfile
+    attempt_stow $HOME $dotfile
 done < $DOTFILES/config/dotfiles
 
 # macOS Application Support
 if [ $unix_name == "Darwin" ]; then
     while read file; do
-        stow --verbose --restow --dir=$DOTFILES/files --target="$HOME/Library/Application Support" $file
+        attempt_stow "$HOME/Library/Application Support" $file
     done < $DOTFILES/config/library
 fi
