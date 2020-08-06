@@ -16,12 +16,13 @@
 * `cask`: macOS application
 * `dotfiles`: list of directories in `files` to `stow`
 * `library`: list of directories in `files` to `stow` into `~/Library/Application Support/`
+* `vscode`: list of extensions
 
 ### `files`
 
 * Symlinked to `$HOME` with `stow`: `aliases`, `git`, `mpd`, `ncmpcpp`, `neovim`, `ripgrep`, `tmux`, and `zsh`
 * Used in `installers`: `terminfo`
-* macOS application configuration: `iterm` and `sublime-text`
+* macOS application configuration: `iterm`, `sublime-text`, and `vscode`
 
 ### `installers`
 
@@ -32,6 +33,7 @@
     * `font`: install current preferred editor font [Source Code Pro](https://github.com/adobe-fonts/source-code-pro)
     * `iterm`: set [iTerm](https://iterm2.com/) preferences and path to the plist in `files/iterm`
     * `mpd`: creates directories and files for [Music Player Daemon](https://www.musicpd.org/)
+    * `vscode`: installs extension from `config/vscode`
 
 ## Modeled after
 
