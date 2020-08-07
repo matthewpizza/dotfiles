@@ -17,6 +17,7 @@
 * `dotfiles`: list of directories in `files` to `stow`
 * `library`: list of directories in `files` to `stow` into `~/Library/Application Support/`
 * `vscode`: list of extensions
+    * `code --list-extensions > config/vscode`
 
 ### `files`
 
