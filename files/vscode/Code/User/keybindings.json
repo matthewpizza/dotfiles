@@ -1,0 +1,8 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "backspace",
+        "command": "-extension.vim_backspace",
+        "when": "editorTextFocus && vim.active && !inDebugRepl"
+    }
+]
