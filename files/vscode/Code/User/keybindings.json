@@ -4,5 +4,14 @@
         "key": "backspace",
         "command": "-extension.vim_backspace",
         "when": "editorTextFocus && vim.active && !inDebugRepl"
+    },
+    {
+        "key": "shift+cmd+\\",
+        "command": "-editor.action.jumpToBracket",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+cmd+\\",
+        "command": "workbench.action.maximizeEditor"
     }
 ]
