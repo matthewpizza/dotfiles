@@ -53,9 +53,9 @@ if [ $unix_name == "Darwin" ]; then
     installer="brew"
 elif [ $unix_name == "Linux" ]; then
     if is_installed yum; then
-        installer="yum -y"
+        installer="sudo yum -y"
     elif is_installed apt-get; then
-        installer="apt-get -y"
+        installer="sudo apt-get -y"
     fi
 else
     echo "Something unexpected happened"
