@@ -18,6 +18,11 @@ if [ -f $HOME/.fzf.zsh ]; then
     source $HOME/.fzf.zsh
 fi
 
+# local settings
+if [[ -f "$HOME/.zshrc.local" ]]; then
+    source "$HOME/.zshrc.local"
+fi
+
 # attach to pizza on load
 if [[ -z "$TMUX" ]] && [ "$SSH_CONNECTION" != "" ]; then
     tmux attach-session -t pizza || tmux new-session -s pizza
