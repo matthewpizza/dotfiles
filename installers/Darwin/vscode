@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+is_installed() {
+    code --list-extensions | grep "$1$" > /dev/null 2>&1
+}
+
+while read extension; do
+    if ! is_installed $extension; then
+        code --install-extension $extension
+    fi
+done < $DOTFILES/config/vscode
