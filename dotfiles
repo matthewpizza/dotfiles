@@ -46,7 +46,6 @@ attempt_stow() {
 if [ $unix_name == "Darwin" ]; then
     if ! is_installed brew; then
         bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-        brew tap "homebrew/cask"
         brew tap "homebrew/core"
         brew tap "homebrew/services"
     fi
