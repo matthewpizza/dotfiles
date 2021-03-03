@@ -10,3 +10,5 @@
     prull = pull --rebase --prune
     rpul = pull --rebase --prune
     statuts = status
+[include]
+    path = .gitconfig.local
