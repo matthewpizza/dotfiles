@@ -12,3 +12,5 @@
     statuts = status
 [include]
     path = .gitconfig.local
+[pager]
+    branch = false
