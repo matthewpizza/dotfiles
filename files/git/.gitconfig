@@ -2,13 +2,15 @@
     commentChar = ";"
     editor = nvim
 [alias]
+    alias = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
     co = checkout
-    prom = rebase origin/master
     porm = rebase origin/master
-    rpull = pull --rebase --prune
-    purll = pull --rebase --prune
+    prom = rebase origin/master
     prull = pull --rebase --prune
+    purll = pull --rebase --prune
     rpul = pull --rebase --prune
+    rpull = pull --rebase --prune
+    rupll = pull --rebase --prune
     statuts = status
 [include]
     path = .gitconfig.local
