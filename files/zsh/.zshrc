@@ -24,6 +24,6 @@ if [[ -f "$HOME/.zshrc.local" ]]; then
 fi
 
 # attach to pizza on load
-if [[ -z "$TMUX" ]] && [ "$SSH_CONNECTION" != "" ]; then
-    tmux attach-session -t pizza || tmux new-session -s pizza
-fi
+# if [[ -z "$TMUX" ]] && [ "$SSH_CONNECTION" != "" ]; then
+#     tmux attach-session -t pizza || tmux new-session -s pizza
+# fi
