@@ -1,4 +1,8 @@
-cool_dude='༼ つ ◕_◕ ༽つ'
+if [[ -n $SSH_CONNECTION ]]; then
+    cool_dude='·͙*̩̩͙˚̩̥̩̥*̩̩̥͙　$HOSTNAME　*̩̩̥͙˚̩̥̩̥*̩̩͙‧͙'
+else
+    cool_dude='༼ つ ◕_◕ ༽つ'
+fi
 
 # Modified robbyrussell theme
 # https://github.com/ohmyzsh/ohmyzsh/blob/master/themes/robbyrussell.zsh-theme
