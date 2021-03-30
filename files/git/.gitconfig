@@ -4,8 +4,10 @@
 [alias]
     alias = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
     co = checkout
-    porm = rebase origin/master
-    prom = rebase origin/master
+    upstream-name = !git remote | egrep -o '(upstream|origin)' | tail -1
+    head-branch = !git remote show $(git upstream-name) | awk '/HEAD branch/ {print $NF}'
+    porm = rebase origin/$(git head-branch)
+    prom = rebase origin/$(git head-branch)
     prull = pull --rebase --prune
     purll = pull --rebase --prune
     rpul = pull --rebase --prune
