@@ -1,5 +1,5 @@
 if [[ -n $SSH_CONNECTION ]]; then
-    cool_dude='·͙*̩̩͙˚̩̥̩̥*̩̩̥͙　$HOSTNAME　*̩̩̥͙˚̩̥̩̥*̩̩͙‧͙'
+    cool_dude='$HOSTNAME'
 else
     cool_dude='༼ つ ◕_◕ ༽つ'
 fi
