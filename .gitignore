@@ -3,3 +3,4 @@
 node_modules
 files/vscode/Code/*
 !files/vscode/Code/User/settings.json
+files/neovim/.config/nvim/.netrwhist
