@@ -7,11 +7,12 @@
     "font_face": "Dank Mono",
     "font_size": 15,
     "highlight_modified_tabs": true,
-    "ignored_packages": [],
+    "ignored_packages": [
+    ],
     "line_padding_bottom": 6,
     "scroll_past_end": true,
     "spell_check": true,
     "theme": "Adaptive.sublime-theme",
     "translate_tabs_to_spaces": true,
-    "word_wrap": true
+    "word_wrap": true,
 }
