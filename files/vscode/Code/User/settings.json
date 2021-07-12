@@ -19,4 +19,5 @@
     "workbench.statusBar.visible": true,
     "window.closeWhenEmpty": true,
     "window.zoomLevel": 0,
+    "workbench.editor.untitled.hint": "hidden",
 }
