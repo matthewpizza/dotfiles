@@ -94,6 +94,15 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
+" help me
+command WQ wq
+command Wq wq
+" TODO: vim gets mad about this, is there another way to add an alias?
+" User defined commands must start with an uppercase letter
+" command wQ wq
+command W w
+command Q q
+
 " code completion
 set wildmenu
 set wildmode=longest:list,full
