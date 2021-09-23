@@ -4,6 +4,7 @@ export FZF_DEFAULT_COMMAND='rg --files'
 export PATH=$HOME/bin:$PATH
 export RIPGREP_CONFIG_PATH=$HOME/.ripgreprc
 export ZSH=$HOME/.oh-my-zsh
+export GPG_TTY=$(tty)
 
 ZSH_THEME='cool_dude'
 
