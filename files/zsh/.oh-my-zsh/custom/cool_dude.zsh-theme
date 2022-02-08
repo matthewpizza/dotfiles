@@ -1,12 +1,9 @@
-if [[ -n $SSH_CONNECTION ]]; then
-    cool_dude='$HOSTNAME'
-else
-    cool_dude='༼ つ ◕_◕ ༽つ'
-fi
+cool='༼ つ ◕_◕ ༽つ'
+unchill='༼ つ ಠ_ಠ ༽つ'
 
 # Modified robbyrussell theme
 # https://github.com/ohmyzsh/ohmyzsh/blob/master/themes/robbyrussell.zsh-theme
-PROMPT="%(?:%{$fg_bold[green]%}$cool_dude:%{$fg_bold[red]%}$cool_dude)"
+PROMPT="%(?:%{$fg[green]%}$cool:%{$fg[red]%}$unchill)"
 PROMPT+=' %{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)'
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[blue]%}git:(%{$fg[red]%}"
