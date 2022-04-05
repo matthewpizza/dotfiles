@@ -3,17 +3,9 @@
 export DOTFILES=$(cd -P -- $(dirname -- $BASH_SOURCE[0]) && pwd -P)
 unix_name=$(uname)
 
-is_installed() {
-    if [ $1 == 'ripgrep' ]; then
-        beepboop='rg'
-    elif [ $1 == 'neovim' ]; then
-        beepboop='nvim'
-    else
-        beepboop=$1
-    fi
-
-    command -v "$beepboop" > /dev/null
-}
+for helper in $DOTFILES/helpers/*; do
+    source $helper
+done
 
 attempt_stow() {
     output=$(stow --verbose --restow --dir=$DOTFILES/files --target="$1" "$2" 2>&1)

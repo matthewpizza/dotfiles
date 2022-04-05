@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+is_installed() {
+    if [ $1 == 'ripgrep' ]; then
+        beepboop='rg'
+    elif [ $1 == 'neovim' ]; then
+        beepboop='nvim'
+    else
+        beepboop=$1
+    fi
+
+    command -v "$beepboop" > /dev/null
+}
