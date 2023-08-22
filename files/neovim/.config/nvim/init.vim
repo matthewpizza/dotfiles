@@ -9,8 +9,8 @@ endif
 call plug#begin('~/.local/share/nvim/plugged')
     Plug 'airblade/vim-gitgutter'
     Plug 'bronson/vim-trailing-whitespace'
-    Plug 'haishanh/night-owl.vim'
     Plug 'editorconfig/editorconfig-vim'
+    Plug 'haishanh/night-owl.vim'
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
     Plug 'junegunn/fzf.vim'
     Plug 'junegunn/vim-slash'

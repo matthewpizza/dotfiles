@@ -39,3 +39,10 @@
 * [frnsys/dippindots](https://github.com/frnsys/dippindots)
 * [komaeda/dotfiles](https://github.com/komaeda/dotfiles)
 * [pje/dotfiles](https://github.com/pje/dotfiles/)
+
+## Color scheme
+
+* [Previously] [Soda Light](https://buymeasoda.github.io/soda-theme/) for Sublime Text (based on the default [Espresso](https://espressoapp.com/) theme)
+* [Previously] [Dracula](https://draculatheme.com/)
+* [Previously] [Night Owl](https://github.com/sdras/night-owl-vscode-theme)
+* [Currently] [Light Owl](https://github.com/sdras/night-owl-vscode-theme)
