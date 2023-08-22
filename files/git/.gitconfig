@@ -15,6 +15,7 @@
     rpull = pull --rebase --prune
     rupll = pull --rebase --prune
     statuts = status
+    st = status
 [include]
     path = .gitconfig.local
 [pager]
