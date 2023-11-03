@@ -34,4 +34,5 @@
     "javascript.format.enable": false,
     "typescript.format.enable": false,
     "terminal.integrated.minimumContrastRatio": 1,
+    "svelte.enable-ts-plugin": true,
 }
