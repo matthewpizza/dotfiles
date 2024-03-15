@@ -10,13 +10,11 @@
     "terminal.integrated.fontFamily": "Dank Mono",
     "terminal.integrated.fontSize": 15,
     "terminal.external.linuxExec": "xterm256",
-    "workbench.activityBar.visible": true,
     "workbench.colorTheme": "Night Owl Light",
     "workbench.iconTheme": null,
     "workbench.startupEditor": "newUntitledFile",
     "workbench.statusBar.visible": true,
     "window.closeWhenEmpty": true,
-    "workbench.editor.untitled.hint": "hidden",
     "typescript.tsserver.maxTsServerMemory": 8192,
     "typescript.updateImportsOnFileMove.enabled": "never",
     "editor.unicodeHighlight.allowedCharacters": {
@@ -35,4 +33,7 @@
     "typescript.format.enable": false,
     "terminal.integrated.minimumContrastRatio": 1,
     "svelte.enable-ts-plugin": true,
+    "terminal.integrated.ignoreBracketedPasteMode": true,
+    "terminal.integrated.shellIntegration.decorationsEnabled": "never",
+    "workbench.editor.empty.hint": "hidden",
 }
