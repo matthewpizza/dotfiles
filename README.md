@@ -22,7 +22,7 @@
 
 * Symlinked to `$HOME` with `stow`: `aliases`, `git`, `mpd`, `ncmpcpp`, `neovim`, `ripgrep`, `tmux`, and `zsh`
 * Used in `installers`: `terminfo`
-* macOS application configuration: `iterm`, `sublime-text`, and `vscode`
+* macOS application configuration: `sublime-text`, and `vscode`
 
 ### `installers`
 
@@ -30,7 +30,6 @@
 * `zsh`: installs [oh my zsh](https://ohmyz.sh/) and changes shell to `zsh`
 * `Darwin`
     * `brew`: install `config/brew` packages
-    * `iterm`: set [iTerm](https://iterm2.com/) preferences and path to the plist in `files/iterm`
     * `mpd`: creates directories and files for [Music Player Daemon](https://www.musicpd.org/)
     * `vscode`: installs extension from `config/vscode`
 

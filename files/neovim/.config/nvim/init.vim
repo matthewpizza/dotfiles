@@ -167,7 +167,7 @@ endif
 
 " airline
 let g:airline#extensions#tabline#enabled = 1 " fake tabs for buffer
-let g:airline_powerline_fonts = 1            " TODO: iTerm vertical character spacing
+let g:airline_powerline_fonts = 1
 
 " gitgutter
 let g:gitgutter_enabled = 1
