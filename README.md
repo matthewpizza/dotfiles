@@ -22,7 +22,7 @@
 
 * Symlinked to `$HOME` with `stow`: `aliases`, `git`, `mpd`, `ncmpcpp`, `neovim`, `ripgrep`, `tmux`, and `zsh`
 * Used in `installers`: `terminfo`
-* macOS application configuration: `sublime-text`, and `vscode`
+* macOS application configuration: `hyper`, `sublime-text`, and `vscode`
 
 ### `installers`
 

@@ -54,6 +54,9 @@ done < $DOTFILES/config/dotfiles
 
 # macOS Application Support
 if [ $unix_name == "Darwin" ]; then
+    while read dotfile; do
+        attempt_stow $HOME $dotfile
+    done < $DOTFILES/config/Darwin/dotfiles
     while read file; do
         attempt_stow "$HOME/Library/Application Support" $file
     done < $DOTFILES/config/Darwin/library
