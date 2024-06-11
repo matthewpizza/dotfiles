@@ -8,4 +8,4 @@ while read package; do
     if ! is_installed $package; then
         brew install $package
     fi
-done < $DOTFILES/config/brew
+done < $DOTFILES/config/Darwin/brew

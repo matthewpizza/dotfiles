@@ -29,9 +29,9 @@
 * `terminfo`: compiles `$HOME/.terminfo` binary use `tic` from source files in `files/terinfo`
 * `zsh`: installs [oh my zsh](https://ohmyz.sh/) and changes shell to `zsh`
 * `Darwin`
-    * `brew`: install `config/brew` packages
+    * `brew`: install `config/Darwin/brew` packages
     * `mpd`: creates directories and files for [Music Player Daemon](https://www.musicpd.org/)
-    * `vscode`: installs extension from `config/vscode`
+    * `vscode`: installs extension from `config/Darwin/vscode`
 
 ## Modeled after
 

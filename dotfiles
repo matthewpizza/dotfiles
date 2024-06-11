@@ -56,5 +56,5 @@ done < $DOTFILES/config/dotfiles
 if [ $unix_name == "Darwin" ]; then
     while read file; do
         attempt_stow "$HOME/Library/Application Support" $file
-    done < $DOTFILES/config/library
+    done < $DOTFILES/config/Darwin/library
 fi
