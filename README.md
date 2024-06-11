@@ -50,7 +50,10 @@
 
 * Use `brew install --cask $thing` for installing everything on a new computer
     * [Arc](https://formulae.brew.sh/cask/arc)
+    * [aText (Version 2)](https://formulae.brew.sh/cask/atext)
     * [Hyper](https://formulae.brew.sh/cask/hyper)
+    * [Itsycal](https://formulae.brew.sh/cask/itsycal)
     * [VS Code](https://formulae.brew.sh/cask/visual-studio-code)
+* Figure out syncing private things like aText and Itsycal settings
 * Remove Sublime Text
 * TODOs in `helpers/attempt_stow`
