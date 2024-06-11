@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+attempt_stow() {
+    output=$(stow --verbose --restow --dir=$DOTFILES/files --target="$1" "$2" 2>&1)
+
+    # restow, suppress output
+    if [[ $output =~ 'UNLINK' ]]; then
+        return
+    fi
+
+    EXISTING_TARGET='existing target is neither a link nor a directory: '
+
+    if [[ ! $output =~ $EXISTING_TARGET ]]; then
+        # Some other error
+        echo "$output"
+        return
+    fi
+
+    # Target file exists and cannot be symlinked
+    file=$(echo "$output" | grep --max-count=1 --only-matching "$EXISTING_TARGET.*" | sed "s/$EXISTING_TARGET//")
+    # ^could be more concise^
+
+    # TODO: How to resolve?
+    # Show diff
+    # Backup and symlink
+    # Delete and symlink
+    # Choose version from diff
+    echo "File exists, skipping: $1/$file"
+}
