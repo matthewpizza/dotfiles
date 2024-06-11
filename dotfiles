@@ -48,15 +48,19 @@ if [ -d $DOTFILES/installers/$unix_name ]; then
     done
 fi
 
+# OS-specific dotfiles
+if [ -d $DOTFILES/config/$unix_name/dotfiles ]; then
+    while read dotfile; do
+        attempt_stow $HOME $dotfile
+    done < $DOTFILES/config/$unix_name/dotfiles
+fi
+
 while read dotfile; do
     attempt_stow $HOME $dotfile
 done < $DOTFILES/config/dotfiles
 
 # macOS Application Support
 if [ $unix_name == "Darwin" ]; then
-    while read dotfile; do
-        attempt_stow $HOME $dotfile
-    done < $DOTFILES/config/Darwin/dotfiles
     while read file; do
         attempt_stow "$HOME/Library/Application Support" $file
     done < $DOTFILES/config/Darwin/library
