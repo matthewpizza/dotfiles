@@ -36,4 +36,6 @@
     "terminal.integrated.ignoreBracketedPasteMode": true,
     "terminal.integrated.shellIntegration.decorationsEnabled": "never",
     "workbench.editor.empty.hint": "hidden",
+    "explorer.confirmDelete": false,
+    "security.workspace.trust.untrustedFiles": "open",
 }
