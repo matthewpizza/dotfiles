@@ -45,3 +45,12 @@
 * [Previously] [Dracula](https://draculatheme.com/)
 * [Previously] [Night Owl](https://github.com/sdras/night-owl-vscode-theme)
 * [Currently] [Light Owl](https://github.com/sdras/night-owl-vscode-theme)
+
+## TODO
+
+* Use `brew install --cask $thing` for installing everything on a new computer
+    * [Arc](https://formulae.brew.sh/cask/arc)
+    * [Hyper](https://formulae.brew.sh/cask/hyper)
+    * [VS Code](https://formulae.brew.sh/cask/visual-studio-code)
+* Remove Sublime Text
+* TODOs in `helpers/attempt_stow`
