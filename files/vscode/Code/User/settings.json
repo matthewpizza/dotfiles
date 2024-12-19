@@ -38,4 +38,8 @@
     "workbench.editor.empty.hint": "hidden",
     "explorer.confirmDelete": false,
     "security.workspace.trust.untrustedFiles": "open",
+    "explorer.confirmDragAndDrop": false,
+    "javascript.updateImportsOnFileMove.enabled": "never",
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "chat.commandCenter.enabled": false,
 }
