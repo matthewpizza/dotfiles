@@ -6,4 +6,6 @@ fi
 
 if [[ ! -d "${HOME}/.oh-my-zsh/" ]]; then
     bash -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    # ohmyzsh creates a new .zshrc on install and `stow` skips symlinks for existing files
+    mv ~/.zshrc ~/.zshrc.oh-my-zsh
 fi
