@@ -19,7 +19,6 @@
     "workbench.statusBar.visible": true,
     "window.closeWhenEmpty": true,
     "typescript.tsserver.maxTsServerMemory": 8192,
-    "typescript.updateImportsOnFileMove.enabled": "never",
     "editor.unicodeHighlight.allowedCharacters": {
         "’": true
     },
@@ -43,6 +42,13 @@
     "security.workspace.trust.untrustedFiles": "open",
     "explorer.confirmDragAndDrop": false,
     "javascript.updateImportsOnFileMove.enabled": "never",
-    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "typescript.updateImportsOnFileMove.enabled": "never",
+    "terminal.integrated.enableMultiLinePasteWarning": "never",
+    "typescript.tsserver.experimental.useVsCodeWatcher": false,
     "chat.commandCenter.enabled": false,
+    "terminal.integrated.cursorBlinking": true,
+    "editor.indentSize": "tabSize",
+    "update.mode": "none",
+    "javascript.updateImportsOnPaste.enabled": false,
+    "typescript.updateImportsOnPaste.enabled": false,
 }
