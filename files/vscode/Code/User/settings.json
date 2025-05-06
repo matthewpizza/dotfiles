@@ -11,6 +11,9 @@
     "terminal.integrated.fontSize": 15,
     "terminal.external.linuxExec": "xterm256",
     "workbench.colorTheme": "Night Owl Light",
+    "workbench.colorCustomizations": {
+        "editorBracketHighlight.foreground3": "#733c1d",
+    },
     "workbench.iconTheme": null,
     "workbench.startupEditor": "newUntitledFile",
     "workbench.statusBar.visible": true,
