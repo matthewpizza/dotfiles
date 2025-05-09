@@ -1,6 +1,12 @@
 cool='༼ つ ◕_◕ ༽つ'
 unchill='༼ つ ಠ_ಠ ༽つ'
 
+# Different dudes for remote connections
+if [[ -n $SSH_CONNECTION ]]; then
+    cool='ʕっ•ᴥ•ʔっ'
+    unchill='ʕ •\`ᴥ•´ʔ'
+fi
+
 # Modified robbyrussell theme
 # https://github.com/ohmyzsh/ohmyzsh/blob/master/themes/robbyrussell.zsh-theme
 PROMPT="%(?:%{$fg[green]%}$cool:%{$fg[red]%}$unchill)"
