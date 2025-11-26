@@ -67,4 +67,6 @@
     "chat.detectParticipant.enabled": false,
     "chat.implicitContext.suggestedContext": false,
     "chat.emptyChatState.enabled": false,
+    "typescript.suggest.autoImports": false,
+    "javascript.suggest.autoImports": false,
 }
