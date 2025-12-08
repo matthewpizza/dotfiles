@@ -1,0 +1,9 @@
+# https://ghostty.org/docs/config
+# https://ghostty.org/docs/config/reference
+
+theme = Light Owl
+font-family = Dank Mono
+font-size = 15
+
+# https://ghostty.org/docs/config/reference#macos-option-as-alt
+macos-option-as-alt = false
