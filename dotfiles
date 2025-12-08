@@ -49,7 +49,7 @@ if [ -d $DOTFILES/installers/$unix_name ]; then
 fi
 
 # OS-specific dotfiles
-if [ -d $DOTFILES/config/$unix_name/dotfiles ]; then
+if [ -f $DOTFILES/config/$unix_name/dotfiles ]; then
     while read dotfile; do
         attempt_stow $HOME $dotfile
     done < $DOTFILES/config/$unix_name/dotfiles
