@@ -10,4 +10,7 @@ config.color_scheme = 'Night Owlish Light'
 config.send_composed_key_when_left_alt_is_pressed = true
 config.send_composed_key_when_right_alt_is_pressed = true
 
+-- https://wezterm.org/config/lua/config/quit_when_all_windows_are_closed.html
+config.quit_when_all_windows_are_closed = false
+
 return config
