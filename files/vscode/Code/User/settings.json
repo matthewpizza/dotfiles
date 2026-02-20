@@ -69,4 +69,5 @@
     "chat.emptyChatState.enabled": false,
     "typescript.suggest.autoImports": false,
     "javascript.suggest.autoImports": false,
+    "chat.disableAIFeatures": true,
 }
