@@ -13,5 +13,6 @@
     {
         "key": "shift+cmd+\\",
         "command": "workbench.action.maximizeEditor"
-    }
+    },
+    { "key": "cmd+s", "command": "workbench.action.files.saveWithoutFormatting", "when": "editorTextFocus" }
 ]
