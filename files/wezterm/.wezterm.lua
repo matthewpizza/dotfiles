@@ -13,4 +13,7 @@ config.send_composed_key_when_right_alt_is_pressed = true
 -- https://wezterm.org/config/lua/config/quit_when_all_windows_are_closed.html
 config.quit_when_all_windows_are_closed = false
 
+-- https://wezterm.org/config/lua/config/window_close_confirmation.html
+config.window_close_confirmation = 'NeverPrompt'
+
 return config
