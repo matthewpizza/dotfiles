@@ -16,4 +16,19 @@ config.quit_when_all_windows_are_closed = false
 -- https://wezterm.org/config/lua/config/window_close_confirmation.html
 config.window_close_confirmation = 'NeverPrompt'
 
+-- option+arrow moves forward/backward a word
+-- https://github.com/zapman449/dotfiles/blob/master/wezterm/.wezterm.lua#L26-L37
+config.keys = {
+    {
+        key="LeftArrow",
+        mods="OPT",
+        action=wezterm.action{SendString="\x1bb"}
+    },
+    {
+        key="RightArrow",
+        mods="OPT",
+        action=wezterm.action{SendString="\x1bf"}
+    },
+}
+
 return config
