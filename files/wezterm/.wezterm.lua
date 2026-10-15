@@ -4,6 +4,8 @@ local config = wezterm.config_builder()
 
 config.font = wezterm.font 'Dank Mono'
 config.font_size = 15
+-- https://wezterm.org/config/font-shaping.html#advanced-font-shaping-options
+config.harfbuzz_features = { 'liga=0' }
 config.color_scheme = 'Night Owlish Light'
 
 -- https://wezterm.org/config/keyboard-concepts.html?h=option+alt#layouts-with-an-altgr-key
