@@ -62,6 +62,26 @@
     "typescript.suggest.autoImports": false,
     "javascript.suggest.autoImports": false,
     "chat.disableAIFeatures": true,
+    "gitlens.showWhatsNewAfterUpgrades": false,
+    "gitlens.plusFeatures.enabled": false,
+    "gitlens.virtualRepositories.enabled": false,
+    "gitlens.rebaseEditor.openOnPausedRebase": false,
+    "gitlens.codeLens.enabled": false,
+    "gitlens.hovers.annotations.enabled": false,
+    "gitlens.codeLens.authors.enabled": false,
+    "gitlens.codeLens.authors.command": false,
+    "gitlens.codeLens.recentChange.enabled": false,
+    "gitlens.codeLens.recentChange.command": false,
+    "gitlens.hovers.avatars": false,
+    "gitlens.blame.heatmap.enabled": false,
+    "gitlens.blame.avatars": false,
+    "gitlens.changes.locations": [
+        "gutter",
+        "line"
+    ],
+    "gitlens.heatmap.locations": [
+        "overview"
+    ],
     "workbench.browser.sendElementsToChat.attachImages": false,
     "window.dialogStyle": "custom",
 }
