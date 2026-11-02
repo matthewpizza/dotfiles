@@ -56,3 +56,4 @@
 * Figure out syncing private things like aText and Itsycal settings
 * Remove Sublime Text
 * TODOs in `helpers/attempt_stow`
+* Make this part of the setup for Chrome https://justthebrowser.com/
