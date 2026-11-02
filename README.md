@@ -22,7 +22,7 @@
 
 * Symlinked to `$HOME` with `stow`: `aliases`, `git`, `mpd`, `ncmpcpp`, `neovim`, `ripgrep`, `tmux`, and `zsh`
 * Used in `installers`: `terminfo`
-* macOS application configuration: sublime-text` and `vscode`
+* macOS application configuration: `chrome`, `sublime-text` and `vscode`
 
 ### `installers`
 
@@ -49,8 +49,8 @@
 ## TODO
 
 * Use `brew install --cask $thing` for installing everything on a new computer
-    * [Arc](https://formulae.brew.sh/cask/arc)
     * [aText (Version 2)](https://formulae.brew.sh/cask/atext)
+    * [Google Chrome](https://formulae.brew.sh/cask/google-chrome)
     * [Itsycal](https://formulae.brew.sh/cask/itsycal)
     * [VS Code](https://formulae.brew.sh/cask/visual-studio-code)
 * Figure out syncing private things like aText and Itsycal settings
