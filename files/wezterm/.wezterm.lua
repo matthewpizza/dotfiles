@@ -2,7 +2,7 @@
 local wezterm = require 'wezterm'
 local config = wezterm.config_builder()
 
-config.font = wezterm.font 'Dank Mono'
+config.font = wezterm.font_with_fallback { 'Dank Mono', 'Menlo' }
 config.font_size = 15
 -- https://wezterm.org/config/font-shaping.html#advanced-font-shaping-options
 config.harfbuzz_features = { 'liga=0' }
